@@ -5,7 +5,7 @@ class Controller_A2demo extends Controller {
 	public function before()
 	{
 		$this->a2 = A2::instance('a2-demo');
-		$this->a1 = $this->a2->a1;
+		$this->a1 = $this->a2->auth();
 
 		$this->user = $this->a2->get_user();
 
